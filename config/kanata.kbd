@@ -1,0 +1,13 @@
+(defsrc
+  esc caps ;
+) 
+
+(defalias
+  capsesc (tap-hold 100 100 caps esc)
+  escctrl (tap-hold-release 100 150 esc lctrl)
+  ; (tap-hold 100 150 ; rmet)
+)
+
+(deflayer base
+  @capsesc @escctrl @;
+)
